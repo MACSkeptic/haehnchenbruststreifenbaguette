@@ -8,3 +8,4 @@ q('.fall--akkusativ .pronomen .possessiv').appendChild(pronomenListe(akkusativ.p
 q('.fall--akkusativ .pronomen .relativ').appendChild(pronomenListe(akkusativ.pronomen.relativ));
 
 q('.fall--dativ .pronomen .reflexiv').appendChild(pronomenListe(dativ.pronomen.reflexiv));
+q('.fall--dativ .pronomen .relativ').appendChild(pronomenListe(dativ.pronomen.relativ));

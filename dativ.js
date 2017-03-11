@@ -39,5 +39,22 @@ dativ.pronomen = {
     nummer: PLU,
     genus: null,
     value: 'sich'
+  }],
+  relativ: [{
+    nummer: SIN,
+    genus: MAS,
+    value: 'dem'
+  }, {
+    nummer: SIN,
+    genus: FEM,
+    value: 'der'
+  }, {
+    nummer: SIN,
+    genus: NEU,
+    value: 'dem'
+  }, {
+    nummer: PLU,
+    genus: null,
+    value: 'denen'
   }]
 };
