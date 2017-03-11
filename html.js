@@ -11,14 +11,38 @@ function ul(lis) {
   return element;
 }
 
+function decline(deklination) {
+  var element = ce('div');
+  element.setAttribute('class', [
+    `deklination__entry`,
+    `deklination__genus--${deklination.genus}`,
+    `deklination__nummer--${deklination.nummer}`
+  ].join(' '));
+  element.innerText = deklination.value;
+  return element;
+}
+
+function declineAll(parent, deklination) {
+  ([].concat(deklination || [])).map(decline).map(parent.appendChild.bind(parent));
+  return parent;
+}
+
 function entry(spec) {
-  var element = ce('span');
+  var element = ce('div');
   element.setAttribute('class', [
     `entry`,
     `entry--genus-${spec.genus}`,
     `entry--nummer-${spec.nummer}`
   ].join(' '));
-  element.innerText = spec.value;
+  var value = ce('div');
+  value.setAttribute('class', 'entry__value');
+  value.innerText = spec.value;
+  element.appendChild(value);
+  var deklination = spec.deklination && declineAll(ce('div'), spec.deklination);
+  deklination && [
+    deklination.setAttribute('class', 'deklination'),
+    element.appendChild(deklination)
+  ];
   return element;
 }
 
