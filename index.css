@@ -27,16 +27,16 @@ li + li { margin-top: 10px; }
 li { background-image: linear-gradient(to bottom, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.01) 100%); }
 
 h2 {
-  padding: 10px 0; background-color: #123456; font-size: 1.6em;
-  background-image: linear-gradient(to right, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.01) 100%);
+  padding: 10px 0; ; font-size: 1.6em;
+  background-image: linear-gradient(to top, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.01) 100%);
 }
 h3 {
-  padding: 8px 0; background-color: #123456; font-size: 1.4em;
-  background-image: linear-gradient(to left, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.01) 100%);
+  padding: 8px 0; ; font-size: 1.4em;
+  background-image: linear-gradient(to top, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.01) 100%);
 }
 h4 {
-  padding: 5px 0; background-color: #123456; font-size: 1.2em;
-  background-image: linear-gradient(to right, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.01) 100%);
+  padding: 5px 0; ; font-size: 1.2em;
+  background-image: linear-gradient(to top, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.01) 100%);
 }
 
 .alles {
