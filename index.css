@@ -54,6 +54,30 @@ li + li { margin-top: 10px; }
 #queryPlural:checked ~ .alles .deklination__entry.deklination__nummer--plural {
   display: block;
 }
+#queryNominativ:checked ~ .alles .fall:not(.fall--nominativ) {
+  display: none;
+}
+#queryAkkusativ:checked ~ .alles .fall:not(.fall--akkusativ) {
+  display: none;
+}
+#queryDativ:checked ~ .alles .fall:not(.fall--dativ) {
+  display: none;
+}
+#queryGenitiv:checked ~ .alles .fall:not(.fall--genitiv) {
+  display: none;
+}
+#queryNominativ:checked ~ .alles .fall.fall--nominativ {
+  display: block;
+}
+#queryAkkusativ:checked ~ .alles .fall.fall--akkusativ {
+  display: block;
+}
+#queryDativ:checked ~ .alles .fall.fall--dativ {
+  display: block;
+}
+#queryGenitiv:checked ~ .alles .fall.fall--genitiv {
+  display: block;
+}
 
 .header {
   grid-area: header;
