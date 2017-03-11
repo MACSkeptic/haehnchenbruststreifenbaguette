@@ -1,13 +1,19 @@
 :root {
-  --color-maskulin: blue;
-  --color-feminin: red;
-  --color-neutral: green;
-  --color-plural: #c7ab66;
+  --color-maskulin: #656fe8;
+  --color-feminin: #ef4a61;
+  --color-neutral: #2c8a49;
+  --color-plural: #ddef4a;
+
+  --color-nominativ: #111111;
+  --color-akkusativ: #222222;
+  --color-dativ: #333333;
+  --color-genitiv: #444444;
 }
 body {
   color: white;
-  background: black;
+  background: #888888;
   font-family: sans-serif;
+  font-size: 9pt;
 }
 body, body * {
  box-sizing: border-box;
@@ -88,15 +94,19 @@ li + li { margin-top: 10px; }
 
 /*-- fall --*/
 .fall--nominativ {
+  background-color: var(--color-nominativ);
   grid-area: nominativ;
 }
 .fall--akkusativ {
+  background-color: var(--color-akkusativ);
   grid-area: akkusativ;
 }
 .fall--dativ {
+  background-color: var(--color-dativ);
   grid-area: dativ;
 }
 .fall--genitiv {
+  background-color: var(--color-genitiv);
   grid-area: genitiv;
 }
 
@@ -141,18 +151,46 @@ li + li { margin-top: 10px; }
   align-items: center;
 }
 .deklination__nummer--plural {
-  background-color: var(--color-plural);
   grid-area: plural;
 }
+.deklination__nummer--plural:after {
+  content: '';
+  display: inline-block;
+  background-color: var(--color-plural);
+  padding: 0.4em;
+  margin-left: 1ch;
+  border-radius: 100%
+}
 .deklination__genus--maskulin {
-  background-color: var(--color-maskulin);
   grid-area: maskulin;
 }
+.deklination__genus--maskulin:after {
+  content: '';
+  display: inline-block;
+  background-color: var(--color-maskulin);
+  padding: 0.4em;
+  margin-left: 1ch;
+  border-radius: 100%
+}
 .deklination__genus--feminin {
-  background-color: var(--color-feminin);
   grid-area: feminin;
 }
+.deklination__genus--feminin:after {
+  content: '';
+  display: inline-block;
+  background-color: var(--color-feminin);
+  padding: 0.4em;
+  margin-left: 1ch;
+  border-radius: 100%
+}
 .deklination__genus--neutral {
-  background-color: var(--color-neutral);
   grid-area: neutral;
+}
+.deklination__genus--neutral:after {
+  content: '';
+  display: inline-block;
+  background-color: var(--color-neutral);
+  padding: 0.4em;
+  margin-left: 1ch;
+  border-radius: 100%
 }
