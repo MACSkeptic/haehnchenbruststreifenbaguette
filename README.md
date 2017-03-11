@@ -14,3 +14,7 @@ Ich brauche nur nicht mein deutsches Grammatik zu verbessern, sondern auch diese
 - kein react
 - viel grid
 - viel Spaß
+
+# Hilfreich
+
+- https://deutsch.lingolia.com/de/grammatik/pronomen
