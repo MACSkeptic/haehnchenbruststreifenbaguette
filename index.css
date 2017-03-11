@@ -43,6 +43,23 @@ h4 { padding: 5px 0; background-color: #123456; font-size: 1.2em; }
     '. . . .'
     'footer footer footer footer';
 }
+@media screen and (max-width: 500px) {
+  .alles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 10px auto auto 10px auto auto 10px auto;
+    grid-template-areas: 
+      'header header header header'
+      '. . . .'
+      'akkusativ akkusativ akkusativ akkusativ'
+      'dativ dativ dativ dativ'
+      '. . . .'
+      'nominativ nominativ nominativ nominativ'
+      'genitiv genitiv genitiv genitiv'
+      '. . . .'
+      'footer footer footer footer';
+  }
+}
 
 #queryMaskulin:checked ~ .alles .deklination__entry:not(.deklination__genus--maskulin) {
   display: none;
