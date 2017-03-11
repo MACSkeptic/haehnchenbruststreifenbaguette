@@ -1,4 +1,32 @@
 body {
   color: white;
   background: black;
+  font-family: sans-serif;
+}
+body, body * { box-sizing: border-box; }
+
+.alles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100%;
+  grid-template-areas: 
+    'header header header header'
+    'nominativ akkusativ dativ genitiv'
+    'footer footer footer footer';
+}
+
+.header {
+  grid-area: header;
+}
+.fall--nominativ {
+  grid-area: nominativ;
+}
+.fall--akkusativ {
+  grid-area: akkusativ;
+}
+.fall--dativ {
+  grid-area: dativ;
+}
+.fall--genitiv {
+  grid-area: genitiv;
 }
