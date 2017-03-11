@@ -1,3 +1,6 @@
+q('.fall--nominativ .artikel .bestimmter').appendChild(pronomenListe(nominativ.artikel.bestimmter));
+q('.fall--nominativ .artikel .unbestimmter').appendChild(pronomenListe(nominativ.artikel.unbestimmter));
+
 q('.fall--nominativ .pronomen .personal').appendChild(pronomenListe(nominativ.pronomen.personal));
 q('.fall--nominativ .pronomen .possessiv').appendChild(pronomenListe(nominativ.pronomen.possessiv));
 q('.fall--nominativ .pronomen .relativ').appendChild(pronomenListe(nominativ.pronomen.relativ));

@@ -46,6 +46,10 @@ function entry(spec) {
   return element;
 }
 
+function artikelListe(artikel) {
+  return ul(([].concat(artikel || [])).map(entry).map(li));
+}
+
 function pronomenListe(pronomen) {
   return ul(([].concat(pronomen || [])).map(entry).map(li));
 }

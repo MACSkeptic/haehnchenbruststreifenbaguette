@@ -1,3 +1,40 @@
+nominativ.artikel = {
+  bestimmter: [{
+    nummer: SIN,
+    genus: MAS,
+    value: 'der'
+  }, {
+    nummer: SIN,
+    genus: FEM,
+    value: 'die'
+  }, {
+    nummer: SIN,
+    genus: NEU,
+    value: 'das'
+  }, {
+    nummer: PLU,
+    genus: null,
+    value: 'die'
+  }],
+  unbestimmter: [{
+    nummer: SIN,
+    genus: MAS,
+    value: 'ein'
+  }, {
+    nummer: SIN,
+    genus: FEM,
+    value: 'eine'
+  }, {
+    nummer: SIN,
+    genus: NEU,
+    value: 'ein'
+  }, {
+    nummer: PLU,
+    genus: null,
+    value: '-'
+  }]
+};
+
 nominativ.pronomen = {
   personal: [{
     nummer: SIN,
