@@ -4,7 +4,9 @@ Ich freue mich auf Deutsch zu lernen.
 
 Aber finde ich "modernes" JavaScript total langweilig.
 
-Daher entiwickle ich ein Webseiten:
+Daher entiwickle ich ein Webseiten.
+
+Ich brauche nur nicht mein deutsches Grammatik zu verbessern, sondern auch diesen Regeln zu beachten:
 
 - kein Bibliothek
 - kein let
