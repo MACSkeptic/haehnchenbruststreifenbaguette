@@ -25,14 +25,20 @@ li { list-style: none; }
 li + li { margin-top: 10px; }
 li { background-image: linear-gradient(to bottom, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.01) 100%); }
 
+h2 { padding: 10px 0; background-color: #123456; font-size: 1.6em; }
+h3 { padding: 8px 0; background-color: #123456; font-size: 1.4em; }
+h4 { padding: 5px 0; background-color: #123456; font-size: 1.2em; }
+
 .alles {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto 10px auto 10px auto;
+  grid-template-rows: auto 10px auto 10px auto 10px auto;
   grid-template-areas: 
     'header header header header'
     '. . . .'
-    'nominativ akkusativ dativ genitiv'
+    'akkusativ akkusativ dativ dativ'
+    '. . . .'
+    'nominativ nominativ genitiv genitiv'
     '. . . .'
     'footer footer footer footer';
 }
