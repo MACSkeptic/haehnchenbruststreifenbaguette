@@ -1,3 +1,40 @@
+akkusativ.artikel = {
+  bestimmter: [{
+    nummer: SIN,
+    genus: MAS,
+    value: 'den'
+  }, {
+    nummer: SIN,
+    genus: FEM,
+    value: 'die'
+  }, {
+    nummer: SIN,
+    genus: NEU,
+    value: 'das'
+  }, {
+    nummer: PLU,
+    genus: null,
+    value: 'die'
+  }],
+  unbestimmter: [{
+    nummer: SIN,
+    genus: MAS,
+    value: 'einen'
+  }, {
+    nummer: SIN,
+    genus: FEM,
+    value: 'eine'
+  }, {
+    nummer: SIN,
+    genus: NEU,
+    value: 'ein'
+  }, {
+    nummer: PLU,
+    genus: null,
+    value: '-'
+  }]
+};
+
 akkusativ.pronomen = {
   personal: [{
     nummer: SIN,

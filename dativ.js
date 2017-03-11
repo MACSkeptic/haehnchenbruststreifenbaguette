@@ -1,3 +1,40 @@
+dativ.artikel = {
+  bestimmter: [{
+    nummer: SIN,
+    genus: MAS,
+    value: 'dem'
+  }, {
+    nummer: SIN,
+    genus: FEM,
+    value: 'der'
+  }, {
+    nummer: SIN,
+    genus: NEU,
+    value: 'dem'
+  }, {
+    nummer: PLU,
+    genus: null,
+    value: 'den'
+  }],
+  unbestimmter: [{
+    nummer: SIN,
+    genus: MAS,
+    value: 'einem'
+  }, {
+    nummer: SIN,
+    genus: FEM,
+    value: 'einer'
+  }, {
+    nummer: SIN,
+    genus: NEU,
+    value: 'einem'
+  }, {
+    nummer: PLU,
+    genus: null,
+    value: '-'
+  }]
+};
+
 dativ.pronomen = {
   personal: [{
     nummer: SIN,
