@@ -165,6 +165,35 @@ h4 {
   font-weight: bolder;
 }
 
+/*-- pronomen --*/
+.pronomen {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: 
+    'header header'
+    'personal reflexiv'
+    'possessiv possessiv'
+    'relativ relativ';
+  justify-items: stretch;
+  align-items: center;
+}
+.pronomen h3 {
+  grid-area: header;
+}
+.pronomen .personal {
+  grid-area: personal;
+}
+.pronomen .possessiv {
+  grid-area: possessiv;
+}
+.pronomen .reflexiv {
+  grid-area: reflexiv;
+}
+.pronomen .relativ {
+  grid-area: relativ;
+}
+
 /*-- artikel --*/
 .artikel {
   display: grid;
