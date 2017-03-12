@@ -235,7 +235,7 @@ nominativ.pronomen = {
     }],
     nummer: SIN,
     genus: FEM,
-    value: 'irh'
+    value: 'ihr'
   }, {
     deklination: [{
       genus: MAS,
