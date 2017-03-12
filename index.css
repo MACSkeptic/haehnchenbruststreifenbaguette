@@ -26,6 +26,8 @@ li { list-style: none; }
 li + li { margin-top: 10px; }
 li { background-image: linear-gradient(to bottom, rgba(255,255,255,0.03) 0%,rgba(255,255,255,0.01) 100%); }
 
+.reminders strong { color: gold; }
+
 h2 {
   padding: 10px 0; ; font-size: 1.6em;
   background-image: linear-gradient(to top, rgba(255,255,255,0.05) 0%,rgba(255,255,255,0.01) 100%);
