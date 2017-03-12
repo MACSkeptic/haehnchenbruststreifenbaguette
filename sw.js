@@ -1,4 +1,4 @@
-var cacheName = 'haehnchenbruststreifenbaguetten-v00000001';
+var cacheName = 'haehnchenbruststreifenbaguetten-v00000002';
 var urlsToCache = [
   '/',
   '/index.html',
