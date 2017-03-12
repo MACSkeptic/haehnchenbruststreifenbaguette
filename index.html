@@ -9,6 +9,22 @@
     <link href="index.css" rel="stylesheet" />
   </head>
   <body>
+    <script type="application/javascript">
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('sw.js').then((registration) => {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }).catch((err) => {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+        window.upgrade = (e) => {
+          e && e.preventDefault && e.preventDefault();
+          navigator.serviceWorker.getRegistration('/').then((registration) => registration.update());
+          return false;
+        };
+      }
+    </script>
     <div style="display: none">
       <input class="query" id="queryMaskulin" type="checkbox" />
       <input class="query" id="queryFeminin" type="checkbox" />
@@ -223,18 +239,10 @@
           </div>
         </div>
       </div>
+      <div class="footer">
+        <a href="upgrade" onclick="return upgrade()">upgrade</a>
+      </div>
     </div>
-    <script type="application/javascript">
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register('sw.js').then((registration) => {
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-          }).catch((err) => {
-            console.log('ServiceWorker registration failed: ', err);
-          });
-        });
-      }
-    </script>
     <script src="lib.js" type="application/javascript"></script>
     <script src="html.js" type="application/javascript"></script>
     <script src="nominativ.js" type="application/javascript"></script>
