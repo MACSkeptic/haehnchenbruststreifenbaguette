@@ -21,22 +21,22 @@ body, body * {
  padding: 0;
 }
 ul { list-style: none; }
-ul { background-image: linear-gradient(to right, rgba(255,255,255,0.05) 0%,rgba(255,255,255,0.01) 100%); }
+ul { background-image: linear-gradient(to right, rgba(255,255,255,0.03) 0%,rgba(255,255,255,0.01) 100%); }
 li { list-style: none; }
 li + li { margin-top: 10px; }
-li { background-image: linear-gradient(to bottom, rgba(255,255,255,0.05) 0%,rgba(255,255,255,0.01) 100%); }
+li { background-image: linear-gradient(to bottom, rgba(255,255,255,0.03) 0%,rgba(255,255,255,0.01) 100%); }
 
 h2 {
   padding: 10px 0; ; font-size: 1.6em;
-  background-image: linear-gradient(to top, rgba(255,255,255,0.08) 0%,rgba(255,255,255,0.01) 100%);
+  background-image: linear-gradient(to top, rgba(255,255,255,0.05) 0%,rgba(255,255,255,0.01) 100%);
 }
 h3 {
   padding: 8px 0; ; font-size: 1.4em;
-  background-image: linear-gradient(to top, rgba(255,255,255,0.08) 0%,rgba(255,255,255,0.01) 100%);
+  background-image: linear-gradient(to top, rgba(255,255,255,0.05) 0%,rgba(255,255,255,0.01) 100%);
 }
 h4 {
   padding: 5px 0; ; font-size: 1.2em;
-  background-image: linear-gradient(to top, rgba(255,255,255,0.08) 0%,rgba(255,255,255,0.01) 100%);
+  background-image: linear-gradient(to top, rgba(255,255,255,0.05) 0%,rgba(255,255,255,0.01) 100%);
 }
 
 .alles {
