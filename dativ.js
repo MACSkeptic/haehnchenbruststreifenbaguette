@@ -1,3 +1,57 @@
+dativ.adjektiv = {
+  bestimmter: [{
+    nummer: SIN,
+    genus: MAS,
+    value: '-en'
+  }, {
+    nummer: SIN,
+    genus: FEM,
+    value: '-en'
+  }, {
+    nummer: SIN,
+    genus: NEU,
+    value: '-en'
+  }, {
+    nummer: PLU,
+    genus: null,
+    value: '-en'
+  }],
+  unbestimmter: [{
+    nummer: SIN,
+    genus: MAS,
+    value: '-en'
+  }, {
+    nummer: SIN,
+    genus: FEM,
+    value: '-en'
+  }, {
+    nummer: SIN,
+    genus: NEU,
+    value: '-en'
+  }, {
+    nummer: PLU,
+    genus: null,
+    value: '-en'
+  }],
+  ohne: [{
+    nummer: SIN,
+    genus: MAS,
+    value: '-em'
+  }, {
+    nummer: SIN,
+    genus: FEM,
+    value: '-er'
+  }, {
+    nummer: SIN,
+    genus: NEU,
+    value: '-em'
+  }, {
+    nummer: PLU,
+    genus: null,
+    value: '-en'
+  }]
+};
+
 dativ.artikel = {
   bestimmter: [{
     nummer: SIN,

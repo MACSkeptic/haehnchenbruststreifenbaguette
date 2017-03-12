@@ -21,22 +21,22 @@ body, body * {
  padding: 0;
 }
 ul { list-style: none; }
-ul { background-image: linear-gradient(to right, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.01) 100%); }
+ul { background-image: linear-gradient(to right, rgba(255,255,255,0.05) 0%,rgba(255,255,255,0.01) 100%); }
 li { list-style: none; }
 li + li { margin-top: 10px; }
-li { background-image: linear-gradient(to bottom, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.01) 100%); }
+li { background-image: linear-gradient(to bottom, rgba(255,255,255,0.05) 0%,rgba(255,255,255,0.01) 100%); }
 
 h2 {
   padding: 10px 0; ; font-size: 1.6em;
-  background-image: linear-gradient(to top, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.01) 100%);
+  background-image: linear-gradient(to top, rgba(255,255,255,0.08) 0%,rgba(255,255,255,0.01) 100%);
 }
 h3 {
   padding: 8px 0; ; font-size: 1.4em;
-  background-image: linear-gradient(to top, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.01) 100%);
+  background-image: linear-gradient(to top, rgba(255,255,255,0.08) 0%,rgba(255,255,255,0.01) 100%);
 }
 h4 {
   padding: 5px 0; ; font-size: 1.2em;
-  background-image: linear-gradient(to top, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.01) 100%);
+  background-image: linear-gradient(to top, rgba(255,255,255,0.08) 0%,rgba(255,255,255,0.01) 100%);
 }
 
 .alles {
@@ -194,6 +194,76 @@ h4 {
   grid-area: relativ;
 }
 
+/*-- adjketiv --*/
+.adjektiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+    'adjektiv-header adjektiv-header adjektiv-header'
+    'bestimmter unbestimmter ohne';
+  justify-items: stretch;
+  align-items: center;
+}
+.adjektiv h3 {
+  grid-area: adjektiv-header;
+}
+.adjektiv .bestimmter {
+  grid-area: bestimmter;
+}
+.adjektiv .unbestimmter {
+  grid-area: unbestimmter;
+}
+.adjektiv .ohne {
+  grid-area: ohne;
+}
+.adjektiv .entry {
+  justify-items: start;
+}
+.adjektiv .entry__value {
+  grid-area: deklination;
+}
+.adjektiv .entry--genus-maskulin:before {
+  content: '';
+  display: inline-block;
+  background-color: var(--color-maskulin);
+  padding: 0.4em;
+  margin-left: 1ch;
+  margin-right: 1ch;
+  border-radius: 100%;
+  grid-area: value;
+}
+.adjektiv .entry--genus-feminin:before {
+  content: '';
+  display: inline-block;
+  background-color: var(--color-feminin);
+  padding: 0.4em;
+  margin-left: 1ch;
+  margin-right: 1ch;
+  border-radius: 100%;
+  grid-area: value;
+}
+.adjektiv .entry--genus-neutral:before {
+  content: '';
+  display: inline-block;
+  background-color: var(--color-neutral);
+  padding: 0.4em;
+  margin-left: 1ch;
+  margin-right: 1ch;
+  border-radius: 100%;
+  grid-area: value;
+}
+.adjektiv .entry--nummer-plural:before {
+  content: '';
+  display: inline-block;
+  background-color: var(--color-plural);
+  padding: 0.4em;
+  margin-left: 1ch;
+  margin-right: 1ch;
+  border-radius: 100%;
+  grid-area: value;
+}
+
 /*-- artikel --*/
 .artikel {
   display: grid;
@@ -214,6 +284,12 @@ h4 {
 .artikel .unbestimmter {
   grid-area: unbestimmter;
 }
+.artikel .entry__value {
+  grid-area: value;
+}
+.artikel .entry {
+  justify-items: start;
+}
 .artikel .entry--genus-maskulin:after {
   content: '';
   display: inline-block;
@@ -221,8 +297,8 @@ h4 {
   padding: 0.4em;
   margin-left: 1ch;
   margin-right: 1ch;
-  border-radius: 100%
-  width: 0;
+  border-radius: 100%;
+  grid-area: deklination;
 }
 .artikel .entry--genus-feminin:after {
   content: '';
@@ -231,8 +307,8 @@ h4 {
   padding: 0.4em;
   margin-left: 1ch;
   margin-right: 1ch;
-  border-radius: 100%
-  width: 0;
+  border-radius: 100%;
+  grid-area: deklination;
 }
 .artikel .entry--genus-neutral:after {
   content: '';
@@ -241,8 +317,8 @@ h4 {
   padding: 0.4em;
   margin-left: 1ch;
   margin-right: 1ch;
-  border-radius: 100%
-  width: 0;
+  border-radius: 100%;
+  grid-area: deklination;
 }
 .artikel .entry--nummer-plural:after {
   content: '';
@@ -251,8 +327,8 @@ h4 {
   padding: 0.4em;
   margin-left: 1ch;
   margin-right: 1ch;
-  border-radius: 100%
-  width: 0;
+  border-radius: 100%;
+  grid-area: deklination;
 }
 
 /*-- deklination --*/

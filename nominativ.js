@@ -1,3 +1,57 @@
+nominativ.adjektiv = {
+  bestimmter: [{
+    nummer: SIN,
+    genus: MAS,
+    value: '-e'
+  }, {
+    nummer: SIN,
+    genus: FEM,
+    value: '-e'
+  }, {
+    nummer: SIN,
+    genus: NEU,
+    value: '-e'
+  }, {
+    nummer: PLU,
+    genus: null,
+    value: '-en'
+  }],
+  unbestimmter: [{
+    nummer: SIN,
+    genus: MAS,
+    value: '-er'
+  }, {
+    nummer: SIN,
+    genus: FEM,
+    value: '-e'
+  }, {
+    nummer: SIN,
+    genus: NEU,
+    value: '-es'
+  }, {
+    nummer: PLU,
+    genus: null,
+    value: '-en'
+  }],
+  ohne: [{
+    nummer: SIN,
+    genus: MAS,
+    value: '-er'
+  }, {
+    nummer: SIN,
+    genus: FEM,
+    value: '-e'
+  }, {
+    nummer: SIN,
+    genus: NEU,
+    value: '-es'
+  }, {
+    nummer: PLU,
+    genus: null,
+    value: '-e'
+  }]
+};
+
 nominativ.artikel = {
   bestimmter: [{
     nummer: SIN,

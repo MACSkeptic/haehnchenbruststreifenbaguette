@@ -1,3 +1,57 @@
+akkusativ.adjektiv = {
+  bestimmter: [{
+    nummer: SIN,
+    genus: MAS,
+    value: '-en'
+  }, {
+    nummer: SIN,
+    genus: FEM,
+    value: '-e'
+  }, {
+    nummer: SIN,
+    genus: NEU,
+    value: '-e'
+  }, {
+    nummer: PLU,
+    genus: null,
+    value: '-en'
+  }],
+  unbestimmter: [{
+    nummer: SIN,
+    genus: MAS,
+    value: '-en'
+  }, {
+    nummer: SIN,
+    genus: FEM,
+    value: '-e'
+  }, {
+    nummer: SIN,
+    genus: NEU,
+    value: '-es'
+  }, {
+    nummer: PLU,
+    genus: null,
+    value: '-en'
+  }],
+  ohne: [{
+    nummer: SIN,
+    genus: MAS,
+    value: '-en'
+  }, {
+    nummer: SIN,
+    genus: FEM,
+    value: '-e'
+  }, {
+    nummer: SIN,
+    genus: NEU,
+    value: '-es'
+  }, {
+    nummer: PLU,
+    genus: null,
+    value: '-e'
+  }]
+};
+
 akkusativ.artikel = {
   bestimmter: [{
     nummer: SIN,
