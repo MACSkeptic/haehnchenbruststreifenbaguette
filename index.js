@@ -35,3 +35,15 @@ q('.fall--dativ .pronomen .relativ').appendChild(pronomenListe(dativ.pronomen.re
 q('.fall--dativ .adjektiv .bestimmter').appendChild(pronomenListe(dativ.adjektiv.bestimmter));
 q('.fall--dativ .adjektiv .unbestimmter').appendChild(pronomenListe(dativ.adjektiv.unbestimmter));
 q('.fall--dativ .adjektiv .ohne').appendChild(pronomenListe(dativ.adjektiv.ohne));
+
+//genitiv
+q('.fall--genitiv .artikel .bestimmter').appendChild(pronomenListe(genitiv.artikel.bestimmter));
+q('.fall--genitiv .artikel .unbestimmter').appendChild(pronomenListe(genitiv.artikel.unbestimmter));
+
+q('.fall--genitiv .adjektiv .bestimmter').appendChild(pronomenListe(genitiv.adjektiv.bestimmter));
+q('.fall--genitiv .adjektiv .unbestimmter').appendChild(pronomenListe(genitiv.adjektiv.unbestimmter));
+q('.fall--genitiv .adjektiv .ohne').appendChild(pronomenListe(genitiv.adjektiv.ohne));
+
+q('.fall--genitiv .pronomen .personal').appendChild(pronomenListe(genitiv.pronomen.personal));
+q('.fall--genitiv .pronomen .possessiv').appendChild(pronomenListe(genitiv.pronomen.possessiv));
+q('.fall--genitiv .pronomen .relativ').appendChild(pronomenListe(genitiv.pronomen.relativ));
